@@ -1,0 +1,9 @@
+stride: 32
+task: detect
+imgsz:
+  - 512
+  - 512
+names:
+  0: Sardine
+  1: Tofu
+channels: 3
