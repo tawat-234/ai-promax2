@@ -6,13 +6,56 @@
 
     <style>
         body{
+            margin: 0;
+            padding: 0;
             overflow: hidden;
         }
         #img{
-            height: 855px;
-            width: 1531px;
-            margin-left:-5px;
+            position: absolute;
+            top: -5px;
+            height: 890px;
+            width: 1536px;
+            margin-left: -1px;
         }
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+
+/* ก่อนเปลี่ยนเป็น wait */
+.fade-out {
+    animation: fadeOut 1s ease forwards;
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+@keyframes fadeOut {
+
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+}
     </style>
 </head>
 <body>
